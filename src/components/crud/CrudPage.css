@@ -1,0 +1,15 @@
+.crud-add {
+  display: grid;
+  grid-template-columns: var(--cols);
+  gap: 28px;
+  align-items: end;
+}
+.crud-row {
+  grid-template-columns: var(--cols);
+}
+
+@media (max-width: 900px) {
+  .crud-add {
+    grid-template-columns: 1fr;
+  }
+}

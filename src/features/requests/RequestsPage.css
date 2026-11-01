@@ -1,0 +1,59 @@
+.requests-stats {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 18px;
+}
+.requests-stat {
+  width: 128px;
+  padding: 12px 20px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+.requests-stat b {
+  display: block;
+  font-size: 24px;
+}
+
+.requests-filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.requests-filters input,
+.requests-filters select {
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+.requests-filters input {
+  flex: 1;
+}
+.requests-filters select {
+  width: 190px;
+}
+
+.requests-row {
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+}
+
+/* выпадающий статус в виде цветной «таблетки» */
+.requests-row .status-select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: auto;
+  height: 24px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+.requests-row .status-select--new { background: #dff0fb; color: #1a73a8; }
+.requests-row .status-select--work { background: #ffe8cc; color: #c2410c; }
+.requests-row .status-select--closed { background: #dcf7e3; color: #15803d; }
+.requests-row .status-select--rejected { background: #fde0e0; color: #c62828; }

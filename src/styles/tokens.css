@@ -1,0 +1,9 @@
+/* Дизайн-токены */
+:root {
+  --blue: #002b96;
+  --blue-soft: #5f82dd;
+  --bg: #f4f7fc;
+  --line: #dfe5f0;
+  --red: #f04646;
+  --text: #111;
+}

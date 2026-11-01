@@ -1,0 +1,21 @@
+.panel.contacts-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 28px;
+  padding: 16px 28px 20px;
+}
+.contacts-save {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+.contacts-saved {
+  color: #15803d;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .panel.contacts-form {
+    grid-template-columns: 1fr;
+  }
+}
